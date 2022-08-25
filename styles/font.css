@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/gilroy/radomir_tinkov_-_gilroy-extrabold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/gilroy/radomir_tinkov_-_gilroy-extrabold-webfont.woff")
+      format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/gilroy/radomir_tinkov_-_gilroy-light-webfont.woff2")
+      format("woff2"),
+    url("../fonts/gilroy/radomir_tinkov_-_gilroy-light-webfont.woff")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gilroy";
+  src: url("../fonts/gilroy/gilroy-medium-webfont.woff2") format("woff2"),
+    url("../fonts/gilroy/gilroy-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Centrale  */
+
+font-face {
+  font-family: "centrale";
+  src: url("../fonts/centrale/centrale_sans_bold-webfont.woff2") format("woff2"),
+    url("../fonts/centrale/centrale_sans_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "centrale";
+  src: url("../fonts/centrale/centrale_sans_extra_light-webfont.woff2")
+      format("woff2"),
+    url("../fonts/centrale/centrale_sans_extra_light-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "centrale";
+  src: url("../fonts/centrale/centrale_sans_extra_thin-webfont.woff2")
+      format("woff2"),
+    url("../fonts/centrale/centrale_sans_extra_thin-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "centrale";
+  src: url("../fonts/centrale/centrale_sans_light-webfont.woff2")
+      format("woff2"),
+    url("../fonts/centrale/centrale_sans_light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "centrale";
+  src: url("../fonts/centrale/centrale_sans_medium-webfont.woff2")
+      format("woff2"),
+    url("../fonts/centrale/centrale_sans_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "centrale";
+  src: url("../fonts/centrale/centrale_sans_regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/centrale/centrale_sans_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "centrale";
+  src: url("../fonts/centrale/centrale_sans_thin-webfont.woff2") format("woff2"),
+    url("../fonts/centrale/centrale_sans_thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Poppins */
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/poppins-black-webfont.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-black-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/poppins-bold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-bold-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/poppins-extrabold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-extrabold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/poppins-extralight-webfont.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-extralight-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/poppins-light-webfont.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/poppins-medium-webfont.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/poppins-regular-webfont.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-regular-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/poppins-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../fonts/poppins/poppins-thin-webfont.woff2") format("woff2"),
+    url("../fonts/poppins/poppins-thin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}

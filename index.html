@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles/font.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="bg-lines">
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+      <span class="bg-lines__line"></span>
+    </div>
+    <main>
+      <section class="about section">
+        <div class="header">
+          <div class="header__infoText">
+            <p>Ahmet Suekinci</p>
+            <span>Web / UI/UX DESIGNER</span>
+          </div>
+          <div class="header__menuSvg">
+            <a href="hamburger.html">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="16"
+                viewBox="0 0 24 16"
+              >
+                <g
+                  id="Group_8139"
+                  data-name="Group 8139"
+                  transform="translate(-1805 -82)"
+                >
+                  <rect
+                    id="Rectangle_1655"
+                    data-name="Rectangle 1655"
+                    width="24"
+                    height="2"
+                    rx="1"
+                    transform="translate(1805 82)"
+                    fill="#16171b"
+                    opacity="0.8"
+                  />
+                  <rect
+                    id="Rectangle_1656"
+                    data-name="Rectangle 1656"
+                    width="24"
+                    height="2"
+                    rx="1"
+                    transform="translate(1805 89)"
+                    fill="#16171b"
+                    opacity="0.8"
+                  />
+                  <rect
+                    id="Rectangle_1657"
+                    data-name="Rectangle 1657"
+                    width="24"
+                    height="2"
+                    rx="1"
+                    transform="translate(1805 96)"
+                    fill="#16171b"
+                    opacity="0.8"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="container">
+          <p class="name">Ahmet Suekinci</p>
+          <div>
+            <h1 class="about__title">Website, UI/UX Tasarımcısı</h1>
+          </div>
+          <div>
+            <p class="about__me">
+              Bir sanat yönetmeni ve tasarımcı olarak son 5 yılda, tam
+              potansiyellerine ulaşmalarına ve yeni müşteriler çekmelerine
+              başarılı bir şekilde yardımcı olmak için büyük şirketlerle
+              çalıştım.
+            </p>
+            <div class="slidedown">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="18"
+                  height="27.6"
+                  viewBox="0 0 18 27.6"
+                >
+                  <defs>
+                    <pattern
+                      id="pattern"
+                      width="1"
+                      height="1"
+                      patternTransform="matrix(1, 0, 0, -1, 0, 55.2)"
+                      viewBox="0 0 18 27.6"
+                    >
+                      <image
+                        preserveAspectRatio="none"
+                        width="18"
+                        height="27.6"
+                        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAuCAYAAAA/SqkPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDExNi4xNjQ2NTUsIDIwMjEvMDEvMjYtMTU6NDE6MjAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMkJDQkQ2QjBCN0IxMUVDQTNGMEYxNzM4QThGQzc3OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMkJDQkQ2QzBCN0IxMUVDQTNGMEYxNzM4QThGQzc3OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQyQkNCRDY5MEI3QjExRUNBM0YwRjE3MzhBOEZDNzc5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQyQkNCRDZBMEI3QjExRUNBM0YwRjE3MzhBOEZDNzc5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lN1mogAAAi1JREFUeNrsmM9KAlEUxudedQwCMUo0UdwYgSK6CQJfyIdw6UO4cuXehxAhaKOIQuhG/JOjRSIGOjZN54sU8U/l1FwL5sAFh5n5fneOc8/c8zFd16WvotPp3LTb7StFUeaj0cgxm83Y4j7GmOR0OnW32z33er2OYDB4GwgErr/SZJ+Ba7Xac7VaPSLheSgUkn0+X8Pv919uu7bX6931+/2LVqul0sQcsVhsGo1Gj/cCD4fDdKlUSsuyrCYSiftdsF2BSZTL5XNVVeVkMpnxeDyZjYsAXh2NRkPJZrOv9LTa+rl9BzSgBc31cxvQXC6ndbvdu59CFwNa0FyHL38MBoM0Zveb0FU4tMHYABcKhelvpPeztIOxOOb4nyuVyhQvUiQSsUkmBbTBwErB8Tu4Xq878PZKJgcYWJ7v4GazqdBMtH2XjJEAAzUBBclOa+6Mqg2TBAUKEaogp2KhUal7EgVG9UPptY/HYxvN4lQUGOmmeq9xKmuG0pzP53UMI/fiI2P/ztdpW0wmE8NPvVzHhwgLbIEt8P8H243emEqlmJVqC2yB/wYY/a3oAJPTnloXDUYjz10ul0bN9KMoKHpnuAecmmYb7XNPRIHhGsCy4LTPfaCd/YsoMKwK+CQ8HA57aW9tQwpEpBn+CMwZ/tFCzuFZmA0GA6bMch3H4/EjGCXUrmpmQaENxsIJWhYQuDPFYpGZkXJoQhuMra7PQcwX0XbTwQy2v2UpijBR3wQYAMOQUhKxFtFzAAAAAElFTkSuQmCC"
+                      />
+                    </pattern>
+                  </defs>
+                  <rect
+                    id="Untitled-1"
+                    width="18"
+                    height="27.6"
+                    fill="url(#pattern)"
+                  />
+                </svg>
+              </div>
+              <div class="slidedown__text">
+                <p>AŞAĞI KAYDIR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="workSlider section">
+        <div class="back"></div>
+        <div class="container">
+          <div class="worksContent">
+            <div class="worksContent__textZone">
+              <div class="workContent__sliderNumber slider-pagination">
+                <span>01</span>
+                <span>/</span>
+                <span>04</span>
+              </div>
+              <div class="spanTitle">
+                <span>İŞLERİM</span>
+              </div>
+              <div class="worksTitle">
+                <p>Zorlu Enerji</p>
+              </div>
+              <div class="worksText">
+                <p>
+                  Güneş enerjisinden elektrikli araçlara, şarj ünitelerinden
+                  elektrik santrallerine, proje geliştirmeden işletmeye kadar
+                  her alanda enerji çözümleri üreten Zorlu Enerj'nin arayüz
+                  gelişiminde katkıda bulundum.
+                </p>
+              </div>
+              <div class="works__button">
+                <button class="btnbox__btn--white">KEŞFET</button>
+              </div>
+            </div>
+            <div class="imgZone">
+              <img src="images/shutterstock_2050591577.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="profile section">
+        <div class="container">
+          <div class="spanTitle">
+            <div class="spanTitle__line"></div>
+            <span>PROFİL</span>
+          </div>
+          <div class="profile__text">
+            <p>
+              5 yıldan fazla deneyimle bir ürünün tüm yolculuğunu en iyi haline
+              çevirebilmek adına çaba sarfediyorum. Kullanılabilirlik,
+              erişilebilirlik ve etkileşimlerden görsellere giderek, kendimi
+              <span class="profile__highlighted"
+                >kullanıcı için en iyi deneyimi sunmaya</span
+              >
+              adadım.
+            </p>
+          </div>
+          <div class="profile__numberInfo">
+            <div>
+              <p class="numberInfo__number">25</p>
+              <p class="numberInfo__text">yaşında</p>
+            </div>
+            <div>
+              <p class="numberInfo__number">5+</p>
+              <p class="numberInfo__text">yıllık deneyim</p>
+            </div>
+            <div>
+              <p class="numberInfo__number">10+</p>
+              <p class="numberInfo__text">kurumsal website</p>
+            </div>
+            <div>
+              <p class="numberInfo__number">2+</p>
+              <p class="numberInfo__text">mobil uygulama</p>
+            </div>
+          </div>
+          <div class="slidedown">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="18"
+                height="27.6"
+                viewBox="0 0 18 27.6"
+              >
+                <defs>
+                  <pattern
+                    id="pattern"
+                    width="1"
+                    height="1"
+                    patternTransform="matrix(1, 0, 0, -1, 0, 55.2)"
+                    viewBox="0 0 18 27.6"
+                  >
+                    <image
+                      preserveAspectRatio="none"
+                      width="18"
+                      height="27.6"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAuCAYAAAA/SqkPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDExNi4xNjQ2NTUsIDIwMjEvMDEvMjYtMTU6NDE6MjAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMkJDQkQ2QjBCN0IxMUVDQTNGMEYxNzM4QThGQzc3OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMkJDQkQ2QzBCN0IxMUVDQTNGMEYxNzM4QThGQzc3OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQyQkNCRDY5MEI3QjExRUNBM0YwRjE3MzhBOEZDNzc5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQyQkNCRDZBMEI3QjExRUNBM0YwRjE3MzhBOEZDNzc5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lN1mogAAAi1JREFUeNrsmM9KAlEUxudedQwCMUo0UdwYgSK6CQJfyIdw6UO4cuXehxAhaKOIQuhG/JOjRSIGOjZN54sU8U/l1FwL5sAFh5n5fneOc8/c8zFd16WvotPp3LTb7StFUeaj0cgxm83Y4j7GmOR0OnW32z33er2OYDB4GwgErr/SZJ+Ba7Xac7VaPSLheSgUkn0+X8Pv919uu7bX6931+/2LVqul0sQcsVhsGo1Gj/cCD4fDdKlUSsuyrCYSiftdsF2BSZTL5XNVVeVkMpnxeDyZjYsAXh2NRkPJZrOv9LTa+rl9BzSgBc31cxvQXC6ndbvdu59CFwNa0FyHL38MBoM0Zveb0FU4tMHYABcKhelvpPeztIOxOOb4nyuVyhQvUiQSsUkmBbTBwErB8Tu4Xq878PZKJgcYWJ7v4GazqdBMtH2XjJEAAzUBBclOa+6Mqg2TBAUKEaogp2KhUal7EgVG9UPptY/HYxvN4lQUGOmmeq9xKmuG0pzP53UMI/fiI2P/ztdpW0wmE8NPvVzHhwgLbIEt8P8H243emEqlmJVqC2yB/wYY/a3oAJPTnloXDUYjz10ul0bN9KMoKHpnuAecmmYb7XNPRIHhGsCy4LTPfaCd/YsoMKwK+CQ8HA57aW9tQwpEpBn+CMwZ/tFCzuFZmA0GA6bMch3H4/EjGCXUrmpmQaENxsIJWhYQuDPFYpGZkXJoQhuMra7PQcwX0XbTwQy2v2UpijBR3wQYAMOQUhKxFtFzAAAAAElFTkSuQmCC"
+                    />
+                  </pattern>
+                </defs>
+                <rect
+                  id="Untitled-1"
+                  width="18"
+                  height="27.6"
+                  fill="url(#pattern)"
+                />
+              </svg>
+            </div>
+            <div class="slidedown__text">
+              <p>AŞAĞI KAYDIR</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience slider section" data-perview="4.5">
+        <div class="container">
+          <div class="spanTitle">
+            <div class="spanTitle__line"></div>
+            <span>DENEYİMLERİM</span>
+          </div>
+          <div class="experience__content">
+            <div class="experience__title">
+              <p>
+                Markaların büyümesine yardımcı olmak için, deneyimi
+                tasarlıyorum.
+              </p>
+            </div>
+            <div>
+              <p class="experiance__text">
+                Son yıllarda çoğunlukla enerji, teknoloji, banka ve
+                telekomünikasyon sektörlerinden müşterilerle çalıştım.
+              </p>
+
+              <div class="slider-nav">
+                <div class="slider-btn slider-btn-prev">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6.401"
+                    height="10.058"
+                    viewBox="0 0 6.401 10.058"
+                  >
+                    <path
+                      id="Path_5574"
+                      data-name="Path 5574"
+                      d="M.3.281a1.076,1.076,0,0,1,1.45,0L6.1,4.351a.916.916,0,0,1,0,1.356l-4.35,4.07a1.077,1.077,0,0,1-1.45,0A.916.916,0,0,1,.3,8.42L3.926,5.03.3,1.637A.916.916,0,0,1,.3.281Z"
+                      transform="translate(6.401 10.058) rotate(180)"
+                      fill="#16171b"
+                      fill-rule="evenodd"
+                      opacity="0.2"
+                    />
+                  </svg>
+                </div>
+                <div class="slider-btn slider-btn-next">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="6.401"
+                    height="10.058"
+                    viewBox="0 0 6.401 10.058"
+                  >
+                    <path
+                      id="Path_5585"
+                      data-name="Path 5585"
+                      d="M.3,9.777a1.076,1.076,0,0,0,1.45,0L6.1,5.707a.916.916,0,0,0,0-1.356L1.751.281A1.077,1.077,0,0,0,.3.281a.916.916,0,0,0,0,1.357L3.926,5.028.3,8.42a.916.916,0,0,0,0,1.356Z"
+                      fill="#16171b"
+                      fill-rule="evenodd"
+                      opacity="0.2"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+        <!-- Swiper -->
+        <div class="slider-wrapper">
+          <div class="swiper slider__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">Slide 1</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__box">Slide 1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="slidedown">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="18"
+                height="27.6"
+                viewBox="0 0 18 27.6"
+              >
+                <defs>
+                  <pattern
+                    id="pattern"
+                    width="1"
+                    height="1"
+                    patternTransform="matrix(1, 0, 0, -1, 0, 55.2)"
+                    viewBox="0 0 18 27.6"
+                  >
+                    <image
+                      preserveAspectRatio="none"
+                      width="18"
+                      height="27.6"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAuCAYAAAA/SqkPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDExNi4xNjQ2NTUsIDIwMjEvMDEvMjYtMTU6NDE6MjAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMkJDQkQ2QjBCN0IxMUVDQTNGMEYxNzM4QThGQzc3OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMkJDQkQ2QzBCN0IxMUVDQTNGMEYxNzM4QThGQzc3OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQyQkNCRDY5MEI3QjExRUNBM0YwRjE3MzhBOEZDNzc5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQyQkNCRDZBMEI3QjExRUNBM0YwRjE3MzhBOEZDNzc5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lN1mogAAAi1JREFUeNrsmM9KAlEUxudedQwCMUo0UdwYgSK6CQJfyIdw6UO4cuXehxAhaKOIQuhG/JOjRSIGOjZN54sU8U/l1FwL5sAFh5n5fneOc8/c8zFd16WvotPp3LTb7StFUeaj0cgxm83Y4j7GmOR0OnW32z33er2OYDB4GwgErr/SZJ+Ba7Xac7VaPSLheSgUkn0+X8Pv919uu7bX6931+/2LVqul0sQcsVhsGo1Gj/cCD4fDdKlUSsuyrCYSiftdsF2BSZTL5XNVVeVkMpnxeDyZjYsAXh2NRkPJZrOv9LTa+rl9BzSgBc31cxvQXC6ndbvdu59CFwNa0FyHL38MBoM0Zveb0FU4tMHYABcKhelvpPeztIOxOOb4nyuVyhQvUiQSsUkmBbTBwErB8Tu4Xq878PZKJgcYWJ7v4GazqdBMtH2XjJEAAzUBBclOa+6Mqg2TBAUKEaogp2KhUal7EgVG9UPptY/HYxvN4lQUGOmmeq9xKmuG0pzP53UMI/fiI2P/ztdpW0wmE8NPvVzHhwgLbIEt8P8H243emEqlmJVqC2yB/wYY/a3oAJPTnloXDUYjz10ul0bN9KMoKHpnuAecmmYb7XNPRIHhGsCy4LTPfaCd/YsoMKwK+CQ8HA57aW9tQwpEpBn+CMwZ/tFCzuFZmA0GA6bMch3H4/EjGCXUrmpmQaENxsIJWhYQuDPFYpGZkXJoQhuMra7PQcwX0XbTwQy2v2UpijBR3wQYAMOQUhKxFtFzAAAAAElFTkSuQmCC"
+                    />
+                  </pattern>
+                </defs>
+                <rect
+                  id="Untitled-1"
+                  width="18"
+                  height="27.6"
+                  fill="url(#pattern)"
+                />
+              </svg>
+            </div>
+            <div class="slidedown__text">
+              <p>AŞAĞI KAYDIR</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact section">
+        <div class="container">
+          <div class="spanTitle">
+            <div class="spanTitle__line"></div>
+            <span>İLETİŞİM</span>
+          </div>
+          <div class="contact__content">
+            <div>
+              <p class="contact-text">
+                For any project inquiery or for more information about what I
+                do, please feel free to get in touch.
+              </p>
+            </div>
+            <div class="contact__btnBox">
+              <button class="btnbox__btn">EMAIL</button>
+              <button class="btnbox__btn">LINKEDIN</button>
+            </div>
+            <p class="contact__followText">
+              Also, you can follow me on
+              <a class="contact__highlighted">Behance</a> and
+              <a class="contact__highlighted">Instagram.</a>
+            </p>
+          </div>
+          <div class="slidedown">
+            <div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="18"
+                height="27.6"
+                viewBox="0 0 18 27.6"
+              >
+                <defs>
+                  <pattern
+                    id="pattern"
+                    width="1"
+                    height="1"
+                    patternTransform="matrix(1, 0, 0, -1, 0, 55.2)"
+                    viewBox="0 0 18 27.6"
+                  >
+                    <image
+                      preserveAspectRatio="none"
+                      width="18"
+                      height="27.6"
+                      xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAuCAYAAAA/SqkPAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDExNi4xNjQ2NTUsIDIwMjEvMDEvMjYtMTU6NDE6MjAgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMS4yIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEMkJDQkQ2QjBCN0IxMUVDQTNGMEYxNzM4QThGQzc3OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEMkJDQkQ2QzBCN0IxMUVDQTNGMEYxNzM4QThGQzc3OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkQyQkNCRDY5MEI3QjExRUNBM0YwRjE3MzhBOEZDNzc5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkQyQkNCRDZBMEI3QjExRUNBM0YwRjE3MzhBOEZDNzc5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+lN1mogAAAi1JREFUeNrsmM9KAlEUxudedQwCMUo0UdwYgSK6CQJfyIdw6UO4cuXehxAhaKOIQuhG/JOjRSIGOjZN54sU8U/l1FwL5sAFh5n5fneOc8/c8zFd16WvotPp3LTb7StFUeaj0cgxm83Y4j7GmOR0OnW32z33er2OYDB4GwgErr/SZJ+Ba7Xac7VaPSLheSgUkn0+X8Pv919uu7bX6931+/2LVqul0sQcsVhsGo1Gj/cCD4fDdKlUSsuyrCYSiftdsF2BSZTL5XNVVeVkMpnxeDyZjYsAXh2NRkPJZrOv9LTa+rl9BzSgBc31cxvQXC6ndbvdu59CFwNa0FyHL38MBoM0Zveb0FU4tMHYABcKhelvpPeztIOxOOb4nyuVyhQvUiQSsUkmBbTBwErB8Tu4Xq878PZKJgcYWJ7v4GazqdBMtH2XjJEAAzUBBclOa+6Mqg2TBAUKEaogp2KhUal7EgVG9UPptY/HYxvN4lQUGOmmeq9xKmuG0pzP53UMI/fiI2P/ztdpW0wmE8NPvVzHhwgLbIEt8P8H243emEqlmJVqC2yB/wYY/a3oAJPTnloXDUYjz10ul0bN9KMoKHpnuAecmmYb7XNPRIHhGsCy4LTPfaCd/YsoMKwK+CQ8HA57aW9tQwpEpBn+CMwZ/tFCzuFZmA0GA6bMch3H4/EjGCXUrmpmQaENxsIJWhYQuDPFYpGZkXJoQhuMra7PQcwX0XbTwQy2v2UpijBR3wQYAMOQUhKxFtFzAAAAAElFTkSuQmCC"
+                    />
+                  </pattern>
+                </defs>
+                <rect
+                  id="Untitled-1"
+                  width="18"
+                  height="27.6"
+                  fill="url(#pattern)"
+                />
+              </svg>
+            </div>
+            <div class="slidedown__text">
+              <p>BAŞA DÖN</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      const sliders = document.querySelectorAll(".slider");
+      sliders.forEach((slider) => {
+        const swiper = slider.querySelector(".slider__swiper");
+        const slidesPerView = slider.dataset.perview ?? 1;
+        const sliderNextBtn = slider.querySelector(".slider-btn-next");
+        const sliderPrevBtn = slider.querySelector(".slider-btn-prev");
+
+        new Swiper(swiper, {
+          slidesPerView,
+          spaceBetween: 62,
+          slidesPerGroup: 3,
+          swipe: true,
+          freeMode: true,
+          loop: false,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: sliderNextBtn,
+            prevEl: sliderPrevBtn,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -10,7 +10,25 @@
     rgba(210, 0, 53, 1) 0%,
     rgba(236, 20, 101, 1) 100%
   );
-  --container-space: calc(100vw - 1300px) / 2;
+  --container-space: calc(calc(100vw - 1300px) / 2);
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+[data-scroll-section] {
+  height: 100vh;
+}
+
+[data-scroll-container] {
+  display: block;
+  height: 100vh;
+  overscroll-behavior: none;
+  transition: 0.3s ease-out;
+  overflow: auto;
 }
 
 a {
@@ -19,8 +37,6 @@ a {
 
 .section {
   min-height: 100vh;
-  /* background-color: #cccc;
-  border: 1px solid black; */
 }
 
 .body {
@@ -118,18 +134,32 @@ a {
   font-size: 11px;
 }
 
+.workSlider {
+  position: relative;
+}
+
 .worksContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1200px;
-  margin: auto;
+  height: 100vh;
 }
 
 .worksContent__textZone {
   max-width: 600px;
   height: 100%;
   padding: 130px 0;
+}
+
+@media (max-width: 1600px) {
+  .worksContent__textZone {
+    padding: 0;
+  }
+}
+
+.works-svg {
+  margin-bottom: 60px;
 }
 
 .worksTitle {
@@ -202,6 +232,8 @@ a {
 }
 
 .back {
+  top: 0;
+  left: 0;
   position: absolute;
   width: calc(100% - calc(var(--container-space) + 320px));
   height: 100%;
@@ -209,6 +241,7 @@ a {
   display: block;
   box-sizing: border-box;
   z-index: -2;
+  border: 1px solid var(--zorlu--main--color);
 }
 
 .spanTitle__line {
@@ -425,10 +458,16 @@ a {
   font-weight: 300;
 }
 
-.contact__highlighted {
+.highlighted__contact {
   font-size: 16px;
   font-family: "Gilroy";
   font-weight: 300;
+  color: #373943;
+}
+
+.highlighted__contact:hover {
+  color: red;
+  text-decoration: underline;
 }
 
 .contact > .container > .slidedown {

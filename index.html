@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles/font.css" />
+    <link rel="stylesheet" href="styles/locomotive-scroll.min.css" />
     <title>Document</title>
   </head>
 
@@ -28,8 +29,14 @@
       <span class="bg-lines__line"></span>
       <span class="bg-lines__line"></span>
     </div>
-    <main>
-      <section class="about section">
+
+    <main data-scroll-container>
+      <section
+        data-scroll-section
+        data-bgcolor="#bcb8ad"
+        data-textcolor="#032f35"
+        class="about section"
+      >
         <div class="header">
           <div class="header__infoText">
             <p>Ahmet Suekinci</p>
@@ -135,11 +142,35 @@
           </div>
         </div>
       </section>
-      <section class="workSlider section">
+      <section data-scroll-section class="workSlider section">
         <div class="back"></div>
         <div class="container">
-          <div class="worksContent">
+          <div class="worksContent" data-scroll data-scroll-call="EVENT_NAME">
             <div class="worksContent__textZone">
+              <div class="works-svg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="74"
+                  height="122"
+                  viewBox="0 0 74 122"
+                >
+                  <text
+                    id="_"
+                    data-name=",,"
+                    transform="matrix(-1, 0, 0, 1, 73, 93)"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="1"
+                    font-size="120"
+                    font-family="Helvetica"
+                    letter-spacing="0.04em"
+                    opacity="0.4"
+                  >
+                    <tspan x="0" y="0">,,</tspan>
+                  </text>
+                </svg>
+              </div>
+
               <div class="workContent__sliderNumber slider-pagination">
                 <span>01</span>
                 <span>/</span>
@@ -163,19 +194,24 @@
                 <button class="btnbox__btn--white">KEŞFET</button>
               </div>
             </div>
-            <div class="imgZone">
+            <div
+              class="imgZone"
+              data-scroll
+              data-scroll-speed="2"
+              data-scroll-delay="1"
+            >
               <img src="images/shutterstock_2050591577.jpg" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section class="profile section">
+      <section data-scroll-section class="profile section">
         <div class="container">
           <div class="spanTitle">
             <div class="spanTitle__line"></div>
             <span>PROFİL</span>
           </div>
-          <div class="profile__text">
+          <div class="profile__text" data-scroll data-scroll-call="EVENT_NAME">
             <p>
               5 yıldan fazla deneyimle bir ürünün tüm yolculuğunu en iyi haline
               çevirebilmek adına çaba sarfediyorum. Kullanılabilirlik,
@@ -244,7 +280,11 @@
         </div>
       </section>
 
-      <section class="experience slider section" data-perview="4.5">
+      <section
+        data-scroll-section
+        class="experience slider section"
+        data-perview="4.5"
+      >
         <div class="container">
           <div class="spanTitle">
             <div class="spanTitle__line"></div>
@@ -378,7 +418,7 @@
           </div>
         </div>
       </section>
-      <section class="contact section">
+      <section data-scroll-section class="contact section">
         <div class="container">
           <div class="spanTitle">
             <div class="spanTitle__line"></div>
@@ -387,8 +427,8 @@
           <div class="contact__content">
             <div>
               <p class="contact-text">
-                For any project inquiery or for more information about what I
-                do, please feel free to get in touch.
+                Herhangi bir proje sorgulama veya hakkında daha fazla bilgi
+                için, lütfen iletişime geçmekten çekinmeyin.
               </p>
             </div>
             <div class="contact__btnBox">
@@ -396,9 +436,10 @@
               <button class="btnbox__btn">LINKEDIN</button>
             </div>
             <p class="contact__followText">
-              Also, you can follow me on
-              <a class="contact__highlighted">Behance</a> and
-              <a class="contact__highlighted">Instagram.</a>
+              Ayrıca beni
+              <a href="#" class="highlighted__contact">Behance</a> ve
+              <a href="#" class="highlighted__contact">Instagram'dan</a>
+              takip edebilirsiniz.
             </p>
           </div>
           <div class="slidedown">
@@ -444,6 +485,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts/locomotive-scroll.min.js"></script>
+    <script src="scripts/app.js"></script>
 
     <script>
       const sliders = document.querySelectorAll(".slider");

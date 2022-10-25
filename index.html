@@ -10,7 +10,13 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles/font.css" />
-    <link rel="stylesheet" href="styles/locomotive-scroll.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
+      integrity="sha512-q54FvbV+gGBn+NvgaD4gpJ7w4wrO00DgW7Rx503PIhrf0CuMwLOwbS+bXgOBFSob+6GVy1HDPfaRLJ8w2jiS4g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
 
@@ -30,17 +36,12 @@
       <span class="bg-lines__line"></span>
     </div>
 
-    <main data-scroll-container>
-      <section
-        data-scroll-section
-        data-bgcolor="#bcb8ad"
-        data-textcolor="#032f35"
-        class="about section"
-      >
+    <main id="fullpage">
+      <section class="about section">
         <div class="header">
           <div class="header__infoText">
             <p>Ahmet Suekinci</p>
-            <span>Web / UI/UX DESIGNER</span>
+            <span> Web / UI/UX DESIGNER</span>
           </div>
           <div class="header__menuSvg">
             <a href="hamburger.html">
@@ -90,7 +91,7 @@
             </a>
           </div>
         </div>
-        <div class="container">
+        <div class="container" data-scroll data-scroll-speed="3">
           <p class="name">Ahmet Suekinci</p>
           <div>
             <h1 class="about__title">Website, UI/UX Tasarımcısı</h1>
@@ -142,10 +143,11 @@
           </div>
         </div>
       </section>
-      <section data-scroll-section class="workSlider section">
+
+      <section class="workSlider section">
         <div class="back"></div>
         <div class="container">
-          <div class="worksContent" data-scroll data-scroll-call="EVENT_NAME">
+          <div class="worksContent">
             <div class="worksContent__textZone">
               <div class="works-svg">
                 <svg
@@ -194,24 +196,20 @@
                 <button class="btnbox__btn--white">KEŞFET</button>
               </div>
             </div>
-            <div
-              class="imgZone"
-              data-scroll
-              data-scroll-speed="2"
-              data-scroll-delay="1"
-            >
+            <div class="imgZone">
               <img src="images/shutterstock_2050591577.jpg" alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section data-scroll-section class="profile section">
+
+      <section class="profile section">
         <div class="container">
           <div class="spanTitle">
             <div class="spanTitle__line"></div>
             <span>PROFİL</span>
           </div>
-          <div class="profile__text" data-scroll data-scroll-call="EVENT_NAME">
+          <div class="profile__text">
             <p>
               5 yıldan fazla deneyimle bir ürünün tüm yolculuğunu en iyi haline
               çevirebilmek adına çaba sarfediyorum. Kullanılabilirlik,
@@ -280,11 +278,7 @@
         </div>
       </section>
 
-      <section
-        data-scroll-section
-        class="experience slider section"
-        data-perview="4.5"
-      >
+      <section class="experience slider section" data-perview="4.5">
         <div class="container">
           <div class="spanTitle">
             <div class="spanTitle__line"></div>
@@ -418,7 +412,7 @@
           </div>
         </div>
       </section>
-      <section data-scroll-section class="contact section">
+      <section class="contact section">
         <div class="container">
           <div class="spanTitle">
             <div class="spanTitle__line"></div>
@@ -432,7 +426,7 @@
               </p>
             </div>
             <div class="contact__btnBox">
-              <button class="btnbox__btn">EMAIL</button>
+              <button class="btnbox__btn mr">EMAIL</button>
               <button class="btnbox__btn">LINKEDIN</button>
             </div>
             <p class="contact__followText">
@@ -482,12 +476,12 @@
         </div>
       </section>
     </main>
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="scripts/locomotive-scroll.min.js"></script>
-    <script src="scripts/app.js"></script>
-
     <script>
       const sliders = document.querySelectorAll(".slider");
       sliders.forEach((slider) => {
@@ -513,6 +507,29 @@
             prevEl: sliderPrevBtn,
           },
         });
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js"
+      integrity="sha512-rXZZDfRSa6rsBuT78nRTbh1ccwpXhTCspKUDqox3hUQNYdjB6KB6mSj6mXcB9/5F5wODAJnkztXPxzkTalp11w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"
+      integrity="sha512-FzESM/E7XJBqcJyrXa08gRcpp5rDHO661C0L3vH4NsZfUWUsjN4+t6Lg8h+e8TMR2aYijIrcT+CPGq7tSugRzA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"
+      integrity="sha512-bxzECOBohzcTcWocMAlNDE2kYs0QgwGs4eD8TlAN2vfovq13kfDfp95sJSZrNpt0VMkpP93ZxLC/+WN/7Trw2g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#fullpage").fullpage();
       });
     </script>
   </body>

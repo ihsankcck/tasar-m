@@ -13,30 +13,12 @@
   --container-space: calc(calc(100vw - 1300px) / 2);
 }
 
-html,
-body {
-  overflow: hidden;
-  height: 100vh;
-}
-
-[data-scroll-section] {
-  height: 100vh;
-}
-
-[data-scroll-container] {
-  display: block;
-  height: 100vh;
-  overscroll-behavior: none;
-  transition: 0.3s ease-out;
-  overflow: auto;
-}
-
 a {
   text-decoration: none;
 }
 
 .section {
-  min-height: 100vh;
+  max-height: 100vh;
 }
 
 .body {
@@ -96,6 +78,12 @@ a {
   justify-content: flex-start;
 }
 
+@media (max-width: 1600px) {
+  .about {
+    margin-bottom: 70px;
+  }
+}
+
 .name {
   font-size: 14px;
   color: rgba(55, 57, 67, 0.7);
@@ -129,6 +117,12 @@ a {
   margin-bottom: 175px;
 }
 
+@media (max-width: 1600px) {
+  .slidedown {
+    margin-bottom: 100px;
+  }
+}
+
 .slidedown__text > p {
   color: rgba(55, 57, 67, 0.7);
   font-size: 11px;
@@ -155,6 +149,7 @@ a {
 @media (max-width: 1600px) {
   .worksContent__textZone {
     padding: 0;
+    margin-bottom: 70px;
   }
 }
 
@@ -251,6 +246,12 @@ a {
   margin: 120px 0px 40px 0px;
 }
 
+@media (max-width: 1600px) {
+  .spanTitle__line {
+    margin: 40px 0px 30px 0px;
+  }
+}
+
 .spanTitle > span {
   display: inline-block;
   font-size: 14px;
@@ -300,6 +301,16 @@ a {
 
 .experience__content {
   margin: 50px 0px 110px 0px;
+}
+
+@media (max-width: 1600px) {
+  .experience__content {
+    margin: 5px 0px 5px 0px;
+  }
+
+  .experience__title > p {
+    margin-top: 50px;
+  }
 }
 
 .experience__title > p {
@@ -368,6 +379,10 @@ a {
   border-radius: 50%;
 }
 
+.contact {
+  padding-top: 50px;
+}
+
 .contact__content {
   margin: 50px 0px 110px 0px;
 }
@@ -389,26 +404,31 @@ a {
   width: 260px;
   height: 60px;
   border: 1px solid #16171b;
-  margin-right: 50px;
+
   color: #16171b;
   font-size: 12px;
   font-family: "gilroy";
   font-weight: 300;
   background-color: transparent;
   position: relative;
+  box-sizing: border-box;
 }
 
 .btnbox__btn--white {
   width: 260px;
   height: 60px;
   border: 1px solid #fff;
-  margin-right: 50px;
   color: #fff;
   font-size: 12px;
   font-family: "gilroy";
   font-weight: 300;
   background-color: transparent;
   position: relative;
+  box-sizing: border-box;
+}
+
+.mr {
+  margin-right: 50px;
 }
 
 .btnbox__btn--white::after {
@@ -435,7 +455,7 @@ a {
   width: 100%;
   height: 0;
   background-color: #16171b;
-  transition: height 0.1s ease-in-out;
+  transition: height 0.3s ease-in-out;
   z-index: -1;
 }
 
@@ -450,6 +470,7 @@ a {
 
 .btnbox__btn:hover::after {
   height: 100%;
+  width: 100%;
 }
 
 .contact__followText {
@@ -461,8 +482,9 @@ a {
 .highlighted__contact {
   font-size: 16px;
   font-family: "Gilroy";
-  font-weight: 300;
+  font-weight: 500;
   color: #373943;
+  transition: color 0.3s linear;
 }
 
 .highlighted__contact:hover {
@@ -470,6 +492,8 @@ a {
   text-decoration: underline;
 }
 
-.contact > .container > .slidedown {
-  margin-bottom: 90px;
+@media (max-width: 1600px) {
+  .experiance > .container > .slidedown {
+    margin-bottom: 20px;
+  }
 }

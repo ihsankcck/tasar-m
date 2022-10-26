@@ -11,6 +11,13 @@
     rgba(236, 20, 101, 1) 100%
   );
   --container-space: calc(calc(100vw - 1300px) / 2);
+  font-size: 16px;
+}
+
+@media (max-width: 1600px) {
+  :root {
+    font-size: 14px;
+  }
 }
 
 a {
@@ -85,14 +92,14 @@ a {
 }
 
 .name {
-  font-size: 14px;
+  font-size: 1rem;
   color: rgba(55, 57, 67, 0.7);
   font-family: "gilroy";
   font-family: 500;
 }
 
 .about__title {
-  font-size: 90px;
+  font-size: 5.6rem;
   color: #373943;
   margin: 60px 0;
   font-family: "gilroy";
@@ -102,7 +109,7 @@ a {
 
 .about__me {
   max-width: 600px;
-  font-size: 16px;
+  font-size: 1rem;
   color: rgba(55, 57, 67, 0.7);
   font-family: "gilroy";
   font-weight: 300;
@@ -125,7 +132,7 @@ a {
 
 .slidedown__text > p {
   color: rgba(55, 57, 67, 0.7);
-  font-size: 11px;
+  font-size: 0.7rem;
 }
 
 .workSlider {
@@ -158,7 +165,7 @@ a {
 }
 
 .worksTitle {
-  font-size: 85px;
+  font-size: 5.3rem;
   font-family: "gilroy";
   font-weight: 500;
   color: #ffff;
@@ -166,7 +173,7 @@ a {
 }
 
 .worksText {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "gilror";
   font-weight: 300;
   color: #fff;
@@ -186,21 +193,21 @@ a {
 }
 
 .slider-pagination > span:first-child {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: "gilroy";
   font-weight: 900;
   color: #ffff;
 }
 
 .slider-pagination > span:nth-child(2) {
-  font-size: 20px;
+  font-size: 0.8rem;
   font-family: "gilroy";
   font-weight: 500;
   color: #ffff;
 }
 
 .slider-pagination > span:last-child {
-  font-size: 14px;
+  font-size: 0.8rem;
   font-family: "gilroy";
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
@@ -228,9 +235,8 @@ a {
 
 .back {
   top: 0;
-  left: 0;
   position: absolute;
-  width: calc(100% - calc(var(--container-space) + 320px));
+  width: calc(100vw - calc(var(--container-space) + 320px));
   height: 100%;
   background: var(--zorlu--main--color);
   display: block;
@@ -254,7 +260,7 @@ a {
 
 .spanTitle > span {
   display: inline-block;
-  font-size: 14px;
+  font-size: 0.8rem;
   color: #2e344d;
   font-family: "gilroy";
   font-weight: 300;
@@ -267,16 +273,17 @@ a {
 }
 
 .profile__text > p {
-  font-size: 45px;
-  color: #373943;
+  font-size: 2.8rem;
+  color: #848484;
   font-family: "gilroy";
   font-weight: 300;
 }
 
 .profile__highlighted {
-  font-size: 45px;
+  font-size: 2.8rem;
   font-family: "Gilroy";
   font-weight: 500;
+  color: #16171b;
 }
 
 .profile__numberInfo {
@@ -286,14 +293,14 @@ a {
 }
 
 .numberInfo__number {
-  font-size: 40px;
+  font-size: 2.5rem;
   color: #373943;
   font-family: "gilroy";
   font-weight: 300;
 }
 
 .numberInfo__text {
-  font-size: 25px;
+  font-size: 1.5rem;
   color: #373943;
   font-family: "gilroy";
   font-weight: 300;
@@ -315,7 +322,7 @@ a {
 
 .experience__title > p {
   color: #16171b;
-  font-size: 45px;
+  font-size: 2.8rem;
   margin-bottom: 50px;
   max-width: 870px;
   font-family: "gilroy";
@@ -323,7 +330,7 @@ a {
 }
 
 .experience__text {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "gilroy";
   font-weight: 300;
   color: #16171b;
@@ -336,7 +343,7 @@ a {
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
 }
@@ -355,6 +362,13 @@ a {
   width: 290px !important;
   height: 290px !important;
   background-color: #fafbfc;
+}
+
+@media (max-width: 1600px) {
+  .swiper-slide__box {
+    width: 230px !important;
+    height: 230px !important;
+  }
 }
 
 .slider-wrapper {
@@ -378,6 +392,11 @@ a {
   border: 1px solid #d0d0d1;
   border-radius: 50%;
 }
+@media (max-width: 1600px) {
+  .slider-btn {
+    margin-bottom: 35px;
+  }
+}
 
 .contact {
   padding-top: 50px;
@@ -389,7 +408,7 @@ a {
 
 .contact-text {
   color: #16171b;
-  font-size: 45px;
+  font-size: 2.8rem;
   margin-bottom: 50px;
   max-width: 870px;
   font-family: "gilroy";
@@ -406,7 +425,7 @@ a {
   border: 1px solid #16171b;
 
   color: #16171b;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-family: "gilroy";
   font-weight: 300;
   background-color: transparent;
@@ -419,7 +438,7 @@ a {
   height: 60px;
   border: 1px solid #fff;
   color: #fff;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-family: "gilroy";
   font-weight: 300;
   background-color: transparent;
@@ -474,13 +493,13 @@ a {
 }
 
 .contact__followText {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Gilroy";
   font-weight: 300;
 }
 
 .highlighted__contact {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: "Gilroy";
   font-weight: 500;
   color: #373943;
@@ -490,10 +509,4 @@ a {
 .highlighted__contact:hover {
   color: red;
   text-decoration: underline;
-}
-
-@media (max-width: 1600px) {
-  .experiance > .container > .slidedown {
-    margin-bottom: 20px;
-  }
 }

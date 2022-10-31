@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/font.css" />
+    <link rel="stylesheet" href="styles/hamburger.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="styles/font.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css"
@@ -37,58 +38,42 @@
     </div>
 
     <main id="fullpage">
-      <section class="about section" id="section0">
+      <div class="hamburger" id="hamburger">
+        <nav class="hamburger-menu">
+          <div class="bg-lines">
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+            <span class="bg-lines__line"></span>
+          </div>
+          <div class="container">
+            <div class="hamburger-menu__content">
+              <div class="hamburger-menu__header">
+                <a href=""> Merhaba </a><a href=""> İşlerim </a
+                ><a href=""> Markalar </a>
+                <a href=""> İletişim </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <section class="about section" data-anchor="section0">
         <div class="header">
           <div class="header__infoText">
             <p>Ahmet Suekinci</p>
             <span> Web / UI/UX DESIGNER</span>
           </div>
-          <div class="header__menuSvg">
-            <a href="hamburger.html">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="16"
-                viewBox="0 0 24 16"
-              >
-                <g
-                  id="Group_8139"
-                  data-name="Group 8139"
-                  transform="translate(-1805 -82)"
-                >
-                  <rect
-                    id="Rectangle_1655"
-                    data-name="Rectangle 1655"
-                    width="24"
-                    height="2"
-                    rx="1"
-                    transform="translate(1805 82)"
-                    fill="#16171b"
-                    opacity="0.8"
-                  />
-                  <rect
-                    id="Rectangle_1656"
-                    data-name="Rectangle 1656"
-                    width="24"
-                    height="2"
-                    rx="1"
-                    transform="translate(1805 89)"
-                    fill="#16171b"
-                    opacity="0.8"
-                  />
-                  <rect
-                    id="Rectangle_1657"
-                    data-name="Rectangle 1657"
-                    width="24"
-                    height="2"
-                    rx="1"
-                    transform="translate(1805 96)"
-                    fill="#16171b"
-                    opacity="0.8"
-                  />
-                </g>
-              </svg>
-            </a>
+          <div class="button_container" id="toggle">
+            <span class="top"></span><span class="middle"></span
+            ><span class="bottom"></span>
           </div>
         </div>
         <div class="container">
@@ -144,8 +129,8 @@
         </div>
       </section>
 
-      <section class="workSlider section" id="section1">
-        <div class="slide active">
+      <section class="workSlider section" data-anchor="section1">
+        <div class="slide" data-anchor="slide1">
           <div class="back"></div>
           <div class="container">
             <div class="worksContent">
@@ -202,8 +187,8 @@
             </div>
           </div>
         </div>
-        </div>
-        <div class="slide">
+
+        <div class="slide" data-anchor="slide2">
           <div class="back"></div>
           <div class="container">
             <div class="worksContent">
@@ -260,7 +245,7 @@
             </div>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide" data-anchor="slide3">
           <div class="back"></div>
           <div class="container">
             <div class="worksContent">
@@ -317,10 +302,9 @@
             </div>
           </div>
         </div>
-      </div>
       </section>
 
-      <section class="profile section" id="section2">
+      <section class="profile section" data-anchor="section2">
         <div class="container">
           <div class="spanTitle">
             <div class="spanTitle__line"></div>
@@ -395,7 +379,11 @@
         </div>
       </section>
 
-      <section id="section3" class="experience slider section" data-perview="4.5">
+      <section
+        class="experience slider section"
+        data-perview="4.5"
+        data-anchor="section3"
+      >
         <div class="container">
           <div class="spanTitle">
             <div class="spanTitle__line"></div>
@@ -529,7 +517,7 @@
           </div>
         </div>
       </section>
-      <section class="contact section">
+      <section class="contact section" data-anchor="section4">
         <div class="container">
           <div class="spanTitle">
             <div class="spanTitle__line"></div>
@@ -587,19 +575,15 @@
               </svg>
             </div>
             <div class="slidedown__text">
-              <p>BAŞA DÖN</p>
+              <a href="#section0">BAŞA DÖN</a>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
     <script>
@@ -644,43 +628,49 @@
       referrerpolicy="no-referrer"
     ></script>
 
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.3/fullpage.min.js"></script>
 
+    <script>
+      $(document).ready(function () {
+        var slideIndexS = 0,
+          sliding = false;
 
-      <script>
-        $(document).ready(function() {
-  var slideIndexS = 0,
-      sliding = false;
-  
-  $('#fullpage').fullpage({
-    controlArrows: false,
-    continuousVertical: true,
-    menu: '#menu',
-		css3: true,
-		licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-		afterSlideLoad: function(section, origin, destination, direction){
-			slideIndexS = destination.index+1;
-		},
-		onLeave: function(origin, destination, direction) {
-			console.log('Index: ' + origin.index + ' Slide Index: ' + slideIndexS);
-			if (origin.index === 1 && !sliding) {
-				if (direction === 'down' && slideIndexS < 3) {
-					$.fn.fullpage.moveSlideRight();
-					return false;
-				} else if (direction === 'up' && slideIndexS > 1) {
-					$.fn.fullpage.moveSlideLeft();
-					return false;
-				}
-			} else if (sliding) {
-				return false;
-			}
-		}
-	});
-});
-      </script>
+        $("#fullpage").fullpage({
+          controlArrows: false,
 
+          anchors: ["section0", "section1", "section2", "section3", "section4"],
+
+          menu: "#menu",
+          css3: true,
+          licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+          afterSlideLoad: function (section, origin, destination, direction) {
+            slideIndexS = destination.index + 1;
+          },
+          onLeave: function (origin, destination, direction) {
+            console.log(
+              "Index: " + origin.index + " Slide Index: " + slideIndexS
+            );
+            if (origin.index === 1 && !sliding) {
+              if (direction === "down" && slideIndexS < 3) {
+                $.fn.fullpage.moveSlideRight();
+                return false;
+              } else if (direction === "up" && slideIndexS > 1) {
+                $.fn.fullpage.moveSlideLeft();
+                return false;
+              }
+            } else if (sliding) {
+              return false;
+            }
+          },
+        });
+      });
+    </script>
+
+    <script>
+      $("#toggle").click(function () {
+        $(this).toggleClass("active");
+        $("#hamburger").toggleClass("open");
+      });
     </script>
   </body>
 </html>

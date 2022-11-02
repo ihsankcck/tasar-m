@@ -57,9 +57,28 @@
           <div class="container">
             <div class="hamburger-menu__content">
               <div class="hamburger-menu__header">
-                <a href=""> Merhaba </a><a href=""> İşlerim </a
-                ><a href=""> Markalar </a>
-                <a href=""> İletişim </a>
+                <a href="">Merhaba</a><a href="">İşlerim</a
+                ><a href="">Markalar</a>
+                <a href="">İletişim</a>
+              </div>
+              <div>
+                <div class="hello">
+                  <div class="hello-content">
+                    <span>Merhaba, ben</span>
+                    <p>
+                      Ahmet Şuekinci, Kullanıcı Arayüzü ve Kullanıcı Deneyimi
+                      tasarımcısıyım.
+                    </p>
+                  </div>
+                </div>
+                <div class="works">
+                  <div class="works-content">
+                    <div class="works-content__box" id="turktelekom"></div>
+                    <div class="works-content__box" id="zorlu"></div>
+                    <div class="works-content__box" id="bellona"></div>
+                    <div class="works-content__box" id="tazelezzet"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -130,8 +149,15 @@
       </section>
 
       <section class="workSlider section" data-anchor="section1">
-        <div class="slide" data-anchor="slide1">
-          <div class="back"></div>
+        <div class="slide slide-scrolling" data-anchor="slide1">
+          <div class="scrolling-box scrolling-box--bg">
+            <div class="scrolling-box__wrapper">
+              <div class="bg"></div>
+              <div class="bg bg--aqua"></div>
+              <div class="bg bg--green"></div>
+              <div class="bg bg--blue"></div>
+            </div>
+          </div>
           <div class="container">
             <div class="worksContent">
               <div class="worksContent__textZone">
@@ -158,150 +184,109 @@
                     </text>
                   </svg>
                 </div>
-                <div class="workContent__sliderNumber slider-pagination">
-                  <span>01</span>
-                  <span>/</span>
-                  <span>04</span>
+                <div
+                  class="workContent__sliderNumber counter slider-pagination"
+                >
+                  <div class="scrolling-box scrolling-box--number">
+                    <div class="scrolling-box__wrapper">
+                      <span class="counter__from">01</span>
+                      <span class="counter__from">02</span>
+                      <span class="counter__from">03</span>
+                      <span class="counter__from">04</span>
+                    </div>
+                  </div>
+                  <span class="counter__seperator">/</span>
+                  <span class="counter__to">04</span>
                 </div>
                 <div class="spanTitle">
                   <span>İŞLERİM</span>
                 </div>
-                <div class="worksTitle">
-                  <p>Zorlu Enerji</p>
-                </div>
-                <div class="worksText">
-                  <p>
-                    Güneş enerjisinden elektrikli araçlara, şarj ünitelerinden
-                    elektrik santrallerine, proje geliştirmeden işletmeye kadar
-                    her alanda enerji çözümleri üreten Zorlu Enerj'nin arayüz
-                    gelişiminde katkıda bulundum.
-                  </p>
+                <div class="scrolling-box scrolling-box--content">
+                  <div class="scrolling-box__wrapper">
+                    <div>
+                      <div class="worksTitle">
+                        <p>Zorlu Enerji</p>
+                      </div>
+                      <div class="worksText">
+                        <p>
+                          Güneş enerjisinden elektrikli araçlara, şarj
+                          ünitelerinden elektrik santrallerine, proje
+                          geliştirmeden işletmeye kadar her alanda enerji
+                          çözümleri üreten Zorlu Enerj'nin arayüz gelişiminde
+                          katkıda bulundum.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="worksTitle">
+                        <p>Turk Telekom</p>
+                      </div>
+                      <div class="worksText">
+                        <p>
+                          Güneş enerjisinden elektrikli araçlara, şarj
+                          ünitelerinden elektrik santrallerine, proje
+                          geliştirmeden işletmeye kadar her alanda enerji
+                          çözümleri üreten Zorlu Enerj'nin arayüz gelişiminde
+                          katkıda bulundum.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="worksTitle">
+                        <p>Taze Lezzet</p>
+                      </div>
+                      <div class="worksText">
+                        <p>
+                          Güneş enerjisinden elektrikli araçlara, şarj
+                          ünitelerinden elektrik santrallerine, proje
+                          geliştirmeden işletmeye kadar her alanda enerji
+                          çözümleri üreten Zorlu Enerj'nin arayüz gelişiminde
+                          katkıda bulundum.
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="worksTitle">
+                        <p>Bellona</p>
+                      </div>
+                      <div class="worksText">
+                        <p>
+                          Güneş enerjisinden elektrikli araçlara, şarj
+                          ünitelerinden elektrik santrallerine, proje
+                          geliştirmeden işletmeye kadar her alanda enerji
+                          çözümleri üreten Zorlu Enerj'nin arayüz gelişiminde
+                          katkıda bulundum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="works__button">
                   <button class="btnbox__btn--white">KEŞFET</button>
                 </div>
               </div>
-              <div class="imgZone">
-                <img src="images/shutterstock_2050591577.jpg" alt="" />
+              <div class="scrolling-box scrolling-box--image">
+                <div class="scrolling-box__wrapper">
+                  <div class="imgZone">
+                    <img src="images/shutterstock_2050591577.jpg" alt="" />
+                  </div>
+                  <div class="imgZone">
+                    <img src="images/shutterstock_599796182.png" alt="" />
+                  </div>
+                  <div class="imgZone">
+                    <img src="images/Untitled-1.png" alt="" />
+                  </div>
+                  <div class="imgZone">
+                    <img src="images/Untitled-2.png" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="slide" data-anchor="slide2">
-          <div class="back"></div>
-          <div class="container">
-            <div class="worksContent">
-              <div class="worksContent__textZone">
-                <div class="works-svg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="74"
-                    height="122"
-                    viewBox="0 0 74 122"
-                  >
-                    <text
-                      id="_"
-                      data-name=",,"
-                      transform="matrix(-1, 0, 0, 1, 73, 93)"
-                      fill="none"
-                      stroke="#fff"
-                      stroke-width="1"
-                      font-size="120"
-                      font-family="Helvetica"
-                      letter-spacing="0.04em"
-                      opacity="0.4"
-                    >
-                      <tspan x="0" y="0">,,</tspan>
-                    </text>
-                  </svg>
-                </div>
-                <div class="workContent__sliderNumber slider-pagination">
-                  <span>01</span>
-                  <span>/</span>
-                  <span>04</span>
-                </div>
-                <div class="spanTitle">
-                  <span>İŞLERİM</span>
-                </div>
-                <div class="worksTitle">
-                  <p>Zorlu Enerji</p>
-                </div>
-                <div class="worksText">
-                  <p>
-                    Güneş enerjisinden elektrikli araçlara, şarj ünitelerinden
-                    elektrik santrallerine, proje geliştirmeden işletmeye kadar
-                    her alanda enerji çözümleri üreten Zorlu Enerj'nin arayüz
-                    gelişiminde katkıda bulundum.
-                  </p>
-                </div>
-                <div class="works__button">
-                  <button class="btnbox__btn--white">KEŞFET</button>
-                </div>
-              </div>
-              <div class="imgZone">
-                <img src="images/shutterstock_2050591577.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="slide" data-anchor="slide3">
-          <div class="back"></div>
-          <div class="container">
-            <div class="worksContent">
-              <div class="worksContent__textZone">
-                <div class="works-svg">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="74"
-                    height="122"
-                    viewBox="0 0 74 122"
-                  >
-                    <text
-                      id="_"
-                      data-name=",,"
-                      transform="matrix(-1, 0, 0, 1, 73, 93)"
-                      fill="none"
-                      stroke="#fff"
-                      stroke-width="1"
-                      font-size="120"
-                      font-family="Helvetica"
-                      letter-spacing="0.04em"
-                      opacity="0.4"
-                    >
-                      <tspan x="0" y="0">,,</tspan>
-                    </text>
-                  </svg>
-                </div>
-                <div class="workContent__sliderNumber slider-pagination">
-                  <span>01</span>
-                  <span>/</span>
-                  <span>04</span>
-                </div>
-                <div class="spanTitle">
-                  <span>İŞLERİM</span>
-                </div>
-                <div class="worksTitle">
-                  <p>Zorlu Enerji</p>
-                </div>
-                <div class="worksText">
-                  <p>
-                    Güneş enerjisinden elektrikli araçlara, şarj ünitelerinden
-                    elektrik santrallerine, proje geliştirmeden işletmeye kadar
-                    her alanda enerji çözümleri üreten Zorlu Enerj'nin arayüz
-                    gelişiminde katkıda bulundum.
-                  </p>
-                </div>
-                <div class="works__button">
-                  <button class="btnbox__btn--white">KEŞFET</button>
-                </div>
-              </div>
-              <div class="imgZone">
-                <img src="images/shutterstock_2050591577.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="slide slide-scrolling" data-anchor="slide2"></div>
+        <div class="slide slide-scrolling" data-anchor="slide3"></div>
+        <div class="slide slide-scrolling" data-anchor="slide4"></div>
       </section>
 
       <section class="profile section" data-anchor="section2">
@@ -637,21 +622,43 @@
 
         $("#fullpage").fullpage({
           controlArrows: false,
-
           anchors: ["section0", "section1", "section2", "section3", "section4"],
-
           menu: "#menu",
           css3: true,
           licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
           afterSlideLoad: function (section, origin, destination, direction) {
             slideIndexS = destination.index + 1;
           },
+          onSlideLeave: function (
+            section,
+            origin,
+            destination,
+            direction,
+            trigger
+          ) {
+            var currentIndex = origin.index;
+
+            //leaving the first slide of the 2nd Section to the right
+            if (origin.index < 4 && direction == "right") {
+              currentIndex += 1;
+            }
+
+            //leaving the 3rd slide of the 2nd Section to the left
+            if (origin.index >= 1 && direction == "left") {
+              currentIndex -= 1;
+            }
+
+            $(".scrolling-box__wrapper").css(
+              "transform",
+              `translateY(-${destination.index * (100 / 4)}%)`
+            );
+          },
           onLeave: function (origin, destination, direction) {
             console.log(
               "Index: " + origin.index + " Slide Index: " + slideIndexS
             );
             if (origin.index === 1 && !sliding) {
-              if (direction === "down" && slideIndexS < 3) {
+              if (direction === "down" && slideIndexS < 4) {
                 $.fn.fullpage.moveSlideRight();
                 return false;
               } else if (direction === "up" && slideIndexS > 1) {

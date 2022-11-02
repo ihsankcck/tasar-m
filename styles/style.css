@@ -5,11 +5,19 @@
 }
 
 :root {
-  --zorlu--main--color: linear-gradient(
-    45deg,
-    rgba(210, 0, 53, 1) 0%,
-    rgba(236, 20, 101, 1) 100%
+  --zorlu--main--color: linear-gradient(#d20035 0%, #ec1465 100%);
+
+  --turktelekom--main--color: linear-gradient(
+    #04b3c8 0%,
+    #04afc8 37.24%,
+    #008bc9 74.67%,
+    #018fca 100%
   );
+
+  --tazedirekt--main--color: linear-gradient(#06aa9c 0%, #38ef7d 100%);
+
+  --bellona--main--color: linear-gradient(#2b21d1 0%, #006fb9 100%);
+
   --container-space: calc(calc(100vw - 1300px) / 2);
   font-size: 16px;
 }
@@ -20,6 +28,10 @@
   }
 }
 
+img {
+  display: block;
+}
+
 a {
   text-decoration: none;
   color: #16171b;
@@ -27,6 +39,7 @@ a {
 
 .section {
   max-height: 100vh;
+  position: relative;
 }
 
 .body {
@@ -81,11 +94,13 @@ a {
 }
 
 .button_container {
-  position: relative;
+  position: fixed;
+  top: 83px;
+  right: 50px;
   height: 27px;
   width: 35px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 999;
   transition: opacity 0.25s ease;
 }
 .button_container:hover {
@@ -203,7 +218,6 @@ a {
 @media (max-width: 1600px) {
   .worksContent__textZone {
     padding: 0;
-    margin-bottom: 70px;
   }
 }
 
@@ -216,7 +230,7 @@ a {
   font-family: "gilroy";
   font-weight: 500;
   color: #ffff;
-  margin: 50px 0px;
+  margin-bottom: 20px;
 }
 
 .worksText {
@@ -225,7 +239,6 @@ a {
   font-weight: 300;
   color: #fff;
   line-height: 2em;
-  margin-bottom: 130px;
 }
 
 .imgZone {
@@ -234,30 +247,13 @@ a {
   object-fit: cover;
 }
 
+.imgZone > img {
+  height: 100%;
+}
+
 .workContent__sliderNumber {
   display: flex;
   align-items: center;
-}
-
-.slider-pagination > span:first-child {
-  font-size: 1.5rem;
-  font-family: "gilroy";
-  font-weight: 900;
-  color: #ffff;
-}
-
-.slider-pagination > span:nth-child(2) {
-  font-size: 0.8rem;
-  font-family: "gilroy";
-  font-weight: 500;
-  color: #ffff;
-}
-
-.slider-pagination > span:last-child {
-  font-size: 0.8rem;
-  font-family: "gilroy";
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .worksContent__textZone > .spanTitle {
@@ -280,16 +276,25 @@ a {
   top: 0;
 }
 
-.back {
-  top: 0;
-  position: absolute;
+.bg {
   width: calc(100vw - calc(var(--container-space) + 320px));
   height: 100%;
   background: var(--zorlu--main--color);
   display: block;
   box-sizing: border-box;
-  z-index: -2;
   border: 1px solid var(--zorlu--main--color);
+}
+
+.bg--aqua {
+  background: var(--turktelekom--main--color);
+}
+
+.bg--green {
+  background: var(--tazedirekt--main--color);
+}
+
+.bg--blue {
+  background: var(--bellona--main--color);
 }
 
 .spanTitle__line {
@@ -556,4 +561,88 @@ a {
 .highlighted__contact:hover {
   color: red;
   text-decoration: underline;
+}
+
+.scrolling-box {
+  overflow: hidden;
+}
+
+.scrolling-box__wrapper {
+  transition: transform 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  height: 400%;
+}
+
+.scrolling-box__wrapper > * {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.scrolling-box--content {
+  height: 230px;
+  margin-bottom: 100px;
+}
+
+.scrolling-box--number {
+  height: 20px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+}
+
+.counter__from {
+  font-size: 1.5rem;
+  font-family: "gilroy";
+  font-weight: 900;
+  color: #ffff;
+}
+
+.counter__seperator {
+  font-size: 0.8rem;
+  font-family: "gilroy";
+  font-weight: 500;
+  color: #ffff;
+  margin: 0 5px;
+}
+
+.counter__to {
+  font-size: 0.8rem;
+  font-family: "gilroy";
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.scrolling-box--bg {
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  z-index: -2;
+}
+
+.scrolling-box--bg > .scrolling-box__wrapper {
+  transition: transform 0.5s linear;
+}
+
+.scrolling-box--content > .scrolling-box__wrapper {
+  transition-delay: 0.1s;
+}
+
+.scrolling-box--image {
+  height: 590px;
+}
+
+.slide-scrolling {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+}
+
+.fp-slidesContainer {
+  transition: none !important;
+  transform: translate(0, 0) !important;
 }
